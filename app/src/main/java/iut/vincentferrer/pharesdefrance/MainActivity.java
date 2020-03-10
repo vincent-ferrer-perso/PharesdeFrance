@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     final static String TAG = "MainActivity";
@@ -22,11 +23,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String pwd = ((EditText)findViewById(R.id.password)).getText().toString();
                 if (pwd.equals("xxx")) {
+                    Toast.makeText(getApplicationContext(),"Welcome",Toast.LENGTH_SHORT).show();
                     Log.d(TAG, "Welcome");
                 } else {
+                    Toast.makeText(getApplicationContext(),"invalid password",Toast.LENGTH_SHORT).show();
                     Log.d(TAG, "invalid passwd");
                 }
             }
         });
+
+
     }
 }
