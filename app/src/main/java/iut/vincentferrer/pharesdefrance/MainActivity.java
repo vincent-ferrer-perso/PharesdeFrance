@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ((Button)findViewById(R.id.buttonErase)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((EditText)findViewById(R.id.password)).setText(null);
+                ((EditText)findViewById(R.id.dateBirth)).setText(null);
+            }
+        });
+
 
     }
 }
