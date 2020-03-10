@@ -2,8 +2,12 @@
     <string name="app_name">Phares de France</string>
     <string name="prenom">Vincent</string>
     <string name="nom">FERRER</string>
+    <string name="prenomUser">Prenom</string>
+    <string name="nomUser">Nom</string>
     <string name="password">Mot de passe</string>
     <string name="dateBirth">Date de naissance</string>
     <string name="buttonLogin">Se connecter</string>
     <string name="buttonErase">Effacer</string>
+    <string name="detailUsername">vide</string>
+    <string name="buttonDeconnexion">Se deconnecter</string>
 </resources>
